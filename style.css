@@ -1,0 +1,155 @@
+:root {
+    --gryffindor-red: #740001;
+    --gryffindor-gold: #D3A625;
+    --parchment: #f4ebd8;
+    --dark-text: #2c1e16;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Crimson Text', serif;
+    background-color: var(--parchment);
+    color: var(--dark-text);
+    background-image: url('https://www.transparenttextures.com/patterns/aged-paper.png');
+}
+
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    color: var(--gryffindor-red);
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(to bottom, var(--gryffindor-red), #3a0000);
+    color: var(--gryffindor-gold);
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 5px solid var(--gryffindor-gold);
+}
+
+header h1 {
+    color: var(--gryffindor-gold);
+    font-size: 3rem;
+    margin: 0 0 10px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid #d4c4a8;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.lista-flores {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.menu-item {
+    background: var(--gryffindor-red);
+    color: var(--parchment);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 2px solid var(--gryffindor-gold);
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.menu-item h3 {
+    color: var(--gryffindor-gold);
+    margin-top: 0;
+}
+
+.molduras-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.moldura {
+    border: 8px solid var(--gryffindor-gold);
+    padding: 10px;
+    background: #111;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.moldura:hover {
+    transform: scale(1.05);
+}
+
+.moldura img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #2c1e16;
+    color: var(--parchment);
+    border-top: 5px solid var(--gryffindor-gold);
+}
+
+button#easter-egg-btn {
+    background-color: var(--gryffindor-gold);
+    color: var(--gryffindor-red);
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+button#easter-egg-btn:hover {
+    background-color: #f1c40f;
+}
+
+.hidden {
+    display: none;
+}
+
+#mensagem-secreta {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 2px dashed var(--gryffindor-gold);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
